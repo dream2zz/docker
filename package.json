@@ -1,0 +1,28 @@
+{
+  "name": "docker-starter",
+  "version": "1.0.0",
+  "description": "Docker 技术站点",
+  "main": "index.js",
+  "scripts": {
+    "start": "vuepress dev docs",
+    "pushImage": "gulp copy && gulp tar && gulp pushImage",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gogs.gsafety.com/CloudNativeTechs/docker.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "gsafety",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "1.5.2",
+    "@vuepress/plugin-last-updated": "1.5.2",
+    "dockerode": "2.5.8",
+    "gulp": "3.9.1",
+    "gulp-tar": "3.0.1",
+    "vuepress": "1.5.2"
+  }
+}
